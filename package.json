@@ -1,0 +1,36 @@
+{
+  "name": "caroline-connection-creator",
+  "version": "1.0.0",
+  "description": "A spiritual website for Caroline, a connection creator and spiritual guide, designed to channel creation energy and convey love, joy, and connection.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "spiritual",
+    "healing",
+    "connection",
+    "caroline",
+    "yhteyden-luoja",
+    "henkinen-ohjaaja",
+    "healing-website",
+    "spiritual-guide"
+  ],
+  "author": "Created with love and creation energy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/caroline-connection-creator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/caroline-connection-creator/issues"
+  },
+  "homepage": "https://github.com/yourusername/caroline-connection-creator#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
