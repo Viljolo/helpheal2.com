@@ -22,12 +22,15 @@ This website was created for Caroline as a connection creator and spiritual guid
 ### 🌊 Interaktiiviset Elementit | Interactive Elements
 - **Energy Waves**: Animated background waves
 - **Sacred Geometry**: Interactive geometric animations
+- **Healing Methods**: Interactive healing service cards
+- **Process Steps**: Animated healing process explanation
 - **Form Interactions**: Healing energy effects on form focus
 - **Smooth Scrolling**: Gentle navigation between sections
 
 ### 📝 Sisältö | Content
 - **Hero Section**: Welcome message with connection theme
 - **About**: Caroline's mission and qualities
+- **Healing**: Spiritual healing methods and energy work
 - **Services**: Spiritual services offered
 - **Connection Form**: Contact form for starting the journey
 - **Contact Information**: Multiple ways to connect

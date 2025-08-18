@@ -165,7 +165,7 @@ function initScrollAnimations() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.service-card, .quality, .contact-item');
+    const animateElements = document.querySelectorAll('.service-card, .quality, .contact-item, .healing-method, .step, .healing-benefits li');
     animateElements.forEach(el => observer.observe(el));
 }
 
@@ -273,13 +273,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add some CSS for animations
     const style = document.createElement('style');
     style.textContent = `
-        .service-card, .quality, .contact-item {
+        .service-card, .quality, .contact-item, .healing-method, .step, .healing-benefits li {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease;
         }
         
-        .service-card.animate-in, .quality.animate-in, .contact-item.animate-in {
+        .service-card.animate-in, .quality.animate-in, .contact-item.animate-in, .healing-method.animate-in, .step.animate-in, .healing-benefits li.animate-in {
             opacity: 1;
             transform: translateY(0);
         }
