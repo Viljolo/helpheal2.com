@@ -279,6 +279,106 @@ body {
     color: var(--primary-color);
 }
 
+/* Hero Image Container */
+.hero-image-container {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    background: var(--gradient-primary);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.hero-image-container:hover .hero-main-image {
+    transform: scale(1.05);
+}
+
+/* Sacred Geometry Overlay */
+.sacred-geometry-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.geometry-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 20s infinite linear;
+}
+
+.geometry-triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: translate(-50%, -50%);
+    animation: rotate 15s infinite linear reverse;
+}
+
+.geometry-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: rotate 10s infinite linear;
+}
+
+/* Hero Image Glow Effect */
+.hero-image-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+    z-index: 1;
+    animation: heroGlow 4s infinite ease-in-out;
+}
+
+@keyframes heroGlow {
+    0%, 100% { 
+        opacity: 0.3; 
+        transform: scale(1) rotate(0deg); 
+    }
+    50% { 
+        opacity: 0.6; 
+        transform: scale(1.1) rotate(180deg); 
+    }
+}
+
 /* Sacred Geometry */
 .sacred-geometry {
     position: relative;
@@ -711,39 +811,96 @@ body {
     justify-content: center;
 }
 
-.image-placeholder {
-    width: 300px;
-    height: 400px;
-    background: var(--gradient-primary);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about-image-container {
     position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
     overflow: hidden;
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+    background: var(--gradient-primary);
 }
 
-.energy-aura {
+.about-image-picture {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.about-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.about-image-container:hover .about-main-image {
+    transform: scale(1.03);
+}
+
+/* About Image Energy Aura */
+.about-energy-aura {
     position: absolute;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
-    animation: aura 4s infinite ease-in-out;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+    z-index: 1;
+    animation: aboutAura 6s infinite ease-in-out;
 }
 
-@keyframes aura {
-    0%, 100% { transform: scale(1); opacity: 0.3; }
-    50% { transform: scale(1.2); opacity: 0.6; }
+@keyframes aboutAura {
+    0%, 100% { 
+        transform: scale(1) rotate(0deg); 
+        opacity: 0.2; 
+    }
+    50% { 
+        transform: scale(1.1) rotate(180deg); 
+        opacity: 0.4; 
+    }
 }
 
-.placeholder-text {
-    color: var(--white);
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    z-index: 2;
+/* About Sacred Geometry */
+.about-sacred-geometry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.about-geometry-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: aboutRotate 25s infinite linear;
+}
+
+.about-geometry-triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: translate(-50%, -50%);
+    animation: aboutRotate 20s infinite linear reverse;
+}
+
+@keyframes aboutRotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* Services Section */
@@ -1014,6 +1171,11 @@ body {
         font-size: 2.5rem;
     }
     
+    .hero-image-container {
+        width: 350px;
+        height: 420px;
+    }
+    
     .sacred-geometry {
         width: 300px;
         height: 300px;
@@ -1023,6 +1185,11 @@ body {
     .connection-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .about-image-container {
+        width: 320px;
+        height: 400px;
     }
     
     .services-grid {
@@ -1077,5 +1244,15 @@ body {
     
     .service-card {
         padding: 2rem;
+    }
+    
+    .hero-image-container {
+        width: 280px;
+        height: 336px;
+    }
+    
+    .about-image-container {
+        width: 280px;
+        height: 350px;
     }
 }

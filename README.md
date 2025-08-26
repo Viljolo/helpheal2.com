@@ -28,12 +28,18 @@ This website was created for Caroline as a connection creator and spiritual guid
 - **Smooth Scrolling**: Gentle navigation between sections
 
 ### 📝 Sisältö | Content
-- **Hero Section**: Welcome message with connection theme
+- **Hero Section**: Welcome message with connection theme and Caroline's nature image
 - **About**: Caroline's mission and qualities
 - **Healing**: Spiritual healing methods and energy work
 - **Services**: Spiritual services offered
 - **Connection Form**: Contact form for starting the journey
 - **Contact Information**: Multiple ways to connect
+
+### 🖼️ Kuvat ja Media | Images and Media
+- **Responsive Images**: Optimized for all devices (WebP + JPEG fallback)
+- **Hero Image**: Caroline in nature with spiritual energy
+- **Sacred Geometry**: Animated overlays on images
+- **Performance Optimized**: Lazy loading and modern formats
 
 ## 🚀 Käyttöönotto | Getting Started
 
@@ -43,13 +49,20 @@ This website was created for Caroline as a connection creator and spiritual guid
 
 ### Asennus | Installation
 1. Lataa kaikki tiedostot samaan kansioon | Download all files to the same folder
-2. Avaa `index.html` selaimessa | Open `index.html` in your browser
-3. Sivusto toimii välittömästi | Website works immediately
+2. Lisää optimoidut kuvat `images/` kansioon | Add optimized images to `images/` folder
+3. Avaa `index.html` selaimessa | Open `index.html` in your browser
+4. Sivusto toimii välittömästi | Website works immediately
+
+### Kuvat | Images
+- Hero-kuva: `images/caroline-hero-*.webp` ja `images/caroline-hero-*.jpg`
+- Kuvakoot: Desktop (500x600px), Tablet (400x480px), Mobile (280x336px)
+- WebP-muoto suositeltava, JPEG fallback vanhemmille selaimille
 
 ### Tiedostot | Files
 - `index.html` - Main HTML structure
 - `styles.css` - Styling and animations
 - `script.js` - Interactive functionality
+- `images/` - Optimized images for different devices
 - `README.md` - This documentation
 
 ## 🎯 Henkinen Tarkoitus | Spiritual Purpose
